@@ -1,0 +1,13 @@
+function curry1(a)
+{
+   return function curry2(b)
+  {
+    return   function curry3(c)
+      {
+              return a+b+c
+      }
+  }
+
+}
+
+console.log(curry1(5)(2)(2))
